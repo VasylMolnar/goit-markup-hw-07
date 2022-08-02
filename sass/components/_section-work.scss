@@ -1,0 +1,64 @@
+/******************* work *******************/
+.work {
+    background-color: $colorwhite;
+    color: $texcolor;
+
+    &__ul {
+        @extend %ul;
+    }
+
+    &__images {
+        padding-top: 118px;
+    }
+
+    &_h4 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    
+    &_p {
+        color: $colorp;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+    }
+}
+
+.img {
+    display: block;
+ }
+ 
+.work__li {
+    position: relative;
+    margin: 0 auto;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: $colorbac;
+    color: $colorwhite;
+    text-align: center;
+}
+
+/*SVG*/
+
+.icon-work {
+  height: 120px;
+  width: 270px;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+  background-color: $tem;
+  border-radius: 4px;
+}

@@ -1,0 +1,136 @@
+/****************** Footer *******************/
+.footer {
+    text-align: left;
+    padding: 60px 0px;
+    background-color: $backgroundfooter;
+    position: relative;
+
+    &_address {
+        padding-top: 20px;
+    }
+
+    &_link {
+        position: absolute;
+        left: 440px;
+        margin-top: -113px;
+    }
+
+    &_subscription {
+        position: absolute;
+        top: 70px;
+        left: 735px;
+        width: 570px;
+    }
+    
+}
+
+.accent {
+    color: $colorwhite;
+}
+
+.Address,
+.Link,
+.tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $background;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.Address {
+    color: white;
+}
+
+.Link,
+.tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*footer_subscription*/
+.subscription_form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &>input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: $backgroundfooter;
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .join-in {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorwhite;
+        margin-bottom: 20px;
+    }
+
+    .subscription_button {
+        @extend %button;
+        width: 200px;
+        height: 50px;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+        &:hover .icon-send {
+            transform: rotateZ(360deg);
+        }
+        
+        &:hover {
+            background-color: $colorp;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+    }
+}
+
+
+
+/*SVG*/
+.icon-send {
+  margin-left: 10px;
+  margin-bottom: -5px;
+  transform: rotateZ(0deg);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-footer {
+  color: $colorwhite;
+}
+
+.footer_h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: $colorwhite;
+
+}
+
+.footer_ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
